@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>home.jsp</welcome-file>
+        <!--<welcome-file>admin.jsp</welcome-file>-->
+    </welcome-file-list>
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>servlets.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/RegisterServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>servlets.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/LogoutServlet</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>servlets.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>MessageServlet</servlet-name>
+        <servlet-class>servlets.MessageServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MessageServlet</servlet-name>
+        <url-pattern>/MessageServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ProductServlet</servlet-name>
+        <servlet-class>servlets.ProductServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProductServlet</servlet-name>
+        <url-pattern>/ProductServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>CategoryServlet</servlet-name>
+        <servlet-class>servlets.CategoryServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CategoryServlet</servlet-name>
+        <url-pattern>/CategoryServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>GetProductServlet</servlet-name>
+        <servlet-class>servlets.GetProductServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetProductServlet</servlet-name>
+        <url-pattern>/GetProductServlet</url-pattern>
+    </servlet-mapping>
+       <servlet>
+        <servlet-name>BuyNowServlet</servlet-name>
+        <servlet-class>servlets.BuyNowServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BuyNowServlet</servlet-name>
+        <url-pattern>/BuyNowServlet</url-pattern>
+    </servlet-mapping>  
+    <servlet>
+        <servlet-name>AddToCart</servlet-name>
+        <servlet-class>servlets.AddToCart</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddToCart</servlet-name>
+        <url-pattern>/AddToCart</url-pattern>
+    </servlet-mapping>
+<servlet>
+        <servlet-name>RemoveFromCart</servlet-name>
+        <servlet-class>servlets.RemoveFromCart</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RemoveFromCart</servlet-name>
+        <url-pattern>/RemoveFromCart</url-pattern>
+    </servlet-mapping>
+</web-app>
